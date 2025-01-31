@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seeds and Commands</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        /* style.css */
+        .press-start-2p-regular {
+            font-family: "Press Start 2P", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            font-size: 12px;
+            background-color: #3d7212; /* Minecraft grass green */
+            font-family: 'Press Start 2P';
+            color: #f0f0f0;
+        }
+
+        h2 {
+            font-family: 'Press Start 2P';
+            color: #4caf50;
+        }
+
+        #details-div {
+            display: none;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            position: relative;
+            font-size: 15px;
+            color: #f0f0f0;
+            border: 2px solid #4caf50;
+        }
+
+        #close-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+            color: #f0f0f0;
+        }
+
+        header {
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Press Start 2P';
+            color: #4caf50;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        .headers {
+            font-size: 50px;
+            font-weight: bold;
+            margin: 20px;
+            color: cyan;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 2px solid #4caf50;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            text-shadow: 2px 2px 4px #000000;
+            background-image: url('https://bugs.mojang.com/secure/attachment/209579/diamond_ore.png');
+            background-size: cover;
+            background-position: center;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: blue;
+        }
+
+        .sub {
+            font-family: 'Press Start 2P';
+            font-size: 15px;
+            color: #d27a1b;
+            margin-bottom: 10px;
+        }
+
+        .subc {
+            font-family: 'Press Start 2P';
+            font-size: 15px;
+            color: #eaa16a;
+            margin-bottom: 10px;
+        }
+
+        .seed-icon {
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
+            vertical-align: middle;
+        }
+
+        .minecraft-button {
+            background-color: #5a9e2f; /* Minecraft green */
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Press Start 2P';
+            transition: background-color 0.3s ease;
+        }
+
+        .minecraft-button:hover {
+            background-color: #468f1e;
+        }
+
+        .watch-map-btn {
+            background-color: #ffa500; /* Minecraft orange */
+            color: black;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Press Start 2P';
+            margin-top: 10px;
+        }
+
+        .watch-map-btn:hover {
+            background-color: #ff8c00;
+        }
+
+        .seeds {
+            background-color: #4caf50; /* Light green background for seeds */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .commands {
+            background-color: #ffeb3b; /* Minecraft yellow background for commands */
+            padding: 20px;
+            border-radius: 10px;
+        }
+      
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <p style="font-size:30px">Himo</p>MINECRAFT<br>
+            <p style="font-size:15px;">seeds and commandes</p>
+        </h1>
+    </header>
+
+    <div class="seeds">
+        <div class="headers">
+            <p>seeds</p>
+        </div>
+        <div>
+            <p class="sub">
+                <img class="seed-icon"
+                    src="https://i.ibb.co/5x4N80G/png-transparent-minecraft-pocket-edition-video-game-diamond-sword-minecraft-story-mode-season-two-an.png">
+                44647503765050661
+                <img class="seed-icon"
+                    src="https://i.ibb.co/5x4N80G/png-transparent-minecraft-pocket-edition-video-game-diamond-sword-minecraft-story-mode-season-two-an.png">
+            </p><br>
+            <button class="minecraft-button" onclick="copyText('44647503765050661')">Copy</button>
+            <button class="watch-map-btn" onclick="window.location.href='V.html?seed=44647503765050661'">Watch Seed Map</button>
+        </div>
+        <div>
+            <p class="sub">
+                <img class="seed-icon"
+                    src="https://i.ibb.co/5x4N80G/png-transparent-minecraft-pocket-edition-video-game-diamond-sword-minecraft-story-mode-season-two-an.png">
+                -2290635191402737382
+                <img class="seed-icon"
+                    src="https://i.ibb.co/5x4N80G/png-transparent-minecraft-pocket-edition-video-game-diamond-sword-minecraft-story-mode-season-two-an.png">
+            </p><br>
+            <button class="minecraft-button" onclick="copyText('-2290635191402737382')">Copy</button>
+            <button class="watch-map-btn" onclick="window.location.href='V.html?seed=-2290635191402737382'">Watch Seed Map</button>
+        </div>
+        <div>
+            <p class="sub">
+                <img class="seed-icon"
+                    src="https://i.ibb.co/5x4N80G/png-transparent-minecraft-pocket-edition-video-game-diamond-sword-minecraft-story-mode-season-two-an.png">
+                -8681228389917480314
+                <img class="seed-icon"
+                    src="https://i.ibb.co/5x4N80G/png-transparent-minecraft-pocket-edition-video-game-diamond-sword-minecraft-story-mode-season-two-an.png">
+            </p><br>
+            <button class="minecraft-button" onclick="copyText('-8681228389917480314')">Copy</button>
+            <button class="watch-map-btn" onclick="window.location.href='V.html?seed=-8681228389917480314'">Watch Seed Map</button>
+        </div>
+        <div>
+            <p class="sub">
+                <img class="seed-icon"
+                    src="https://i.ibb.co/5x4N80G/png-transparent-minecraft-pocket-edition-video-game-diamond-sword-minecraft-story-mode-season-two-an.png">
+                39227070353904933
+                <img class="seed-icon"
+                    src="https://i.ibb.co/5x4N80G/png-transparent-minecraft-pocket-edition-video-game-diamond-sword-minecraft-story-mode-season-two-an.png">
+            </p><br>
+            <button class="minecraft-button" onclick="copyText('39227070353904933')">Copy</button>
+            <button class="watch-map-btn" onclick="window.location.href='V.html?seed=39227070353904933'">Watch Seed Map</button>
+        </div>
+    </div>
+
+    <div class="commands">
+        <div class="headers">
+            <p>commands</p>
+        </div>
+        <p class="subc">/fillbiome </p><br>
+        <button class="minecraft-button" onclick="copyText('/fillbiome')">Copy</button>
+        <button class="minecraft-button" onclick="showDetails('The /fillbiome command changes the biome of a specified area. Example: /fillbiome -100 64 200 -50 70 250 minecraft:plains.')">What does this do?</button><br>
+        <p class="subc">/fill </p><br>
+        <button class="minecraft-button" onclick="copyText('/fill')">Copy</button>
+        <button class="minecraft-button" onclick="showDetails('The /fill command allows you to fill an area with a specific block. Example: /fill 10 64 10 20 64 20 minecraft:stone.')">What does this do?</button><br>
+        <p class="subc">/locate structure </p><br>
+        <button class="minecraft-button" onclick="copyText('/locate structure')">Copy</button>
+        <button class="minecraft-button" onclick="showDetails('The /locate structure command finds the nearest structure of a specified type. Example: /locate structure nether_fortress.')">What does this do?</button><br>
+        <p class="subc">/kill </p><br>
+        <button class="minecraft-button" onclick="copyText('/kill')">Copy</button>
+        <button class="minecraft-button" onclick="showDetails('The /kill command instantly kills the specified entity. Example: /kill @p kills the nearest player. Use with caution!')">What does this do?</button><br>
+        <p class="subc">/effect @p night_vision 9999</p><br>
+        <button class="minecraft-button" onclick="copyText('/effect @p night_vision 9999')">Copy</button>
+        <button class="minecraft-button" onclick="showDetails('The /effect command applies a status effect the target. Example: /effect @p night_vision 9999 gives the nearest player unlimited night vision.')">What does this do?</button>
+    </div>
+
+    <div id="details-div" style="display:none;">
+        <div id="details-content"></div>
+        <button class="close-btn" onclick="hideDetails()">X</button>
+    </div>
+
+    <script>
+        function copyText(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert(text + ' copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
+
+        function showDetails(details) {
+            document.getElementById('details-div').style.display = 'block';
+            document.getElementById('details-content').textContent = details;
+        }
+
+        function hideDetails() {
+            document.getElementById('details-div').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
