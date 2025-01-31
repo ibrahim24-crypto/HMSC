@@ -18,14 +18,22 @@
         }
         .video-container {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            gap: 20px;
             margin-top: 20px;
         }
         iframe {
             border: 5px solid #5c913b;
             border-radius: 10px;
             box-shadow: 0px 0px 15px #5c913b;
+        }
+        .seed-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
         }
         .seed-code {
             font-size: 18px;
@@ -34,7 +42,6 @@
             padding: 10px;
             border-radius: 5px;
             display: inline-block;
-            margin-top: 10px;
             box-shadow: 0px 0px 10px #5c913b;
         }
     </style>
@@ -42,12 +49,26 @@
 </head>
 <body>
     <h1>Minecraft Seeds Videos</h1>
-    <h2 class="seed-code">44647503765050661</h2>
     <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/l37pUQgtRrY?si=ET7A4U_4EKXnCVu5" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe>
+        <div class="seed-block">
+            <div class="seed-code">44647503765050661</div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l37pUQgtRrY?si=ET7A4U_4EKXnCVu5" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+        <div class="seed-block">
+            <div class="seed-code">-2290635191402737382</div>
+            <p>En cours de développement...</p>
+        </div>
+        <div class="seed-block">
+            <div class="seed-code">-8681228389917480314</div>
+            <p>En cours de développement...</p>
+        </div>
+        <div class="seed-block">
+            <div class="seed-code">39227070353904933</div>
+            <p>En cours de développement...</p>
+        </div>
     </div>
 </body>
 </html>
